@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/syaq-project/static/css/main.a650ed1a.css",
-    "main.js": "/syaq-project/static/js/main.1e788670.js",
+    "main.js": "/syaq-project/static/js/main.056db2ae.js",
     "static/js/787.d4aba7ab.chunk.js": "/syaq-project/static/js/787.d4aba7ab.chunk.js",
     "static/media/Group 138group.svg": "/syaq-project/static/media/Group 138group.391a52c5078794f5476c898f8aa8c4c0.svg",
+    "static/media/Frame 2map.svg": "/syaq-project/static/media/Frame 2map.baeabd8c8f06d20c716f95fc2937278d.svg",
     "static/media/Frame 21syaq-icon.svg": "/syaq-project/static/media/Frame 21syaq-icon.16e3d8976965d3dd4a64440cfcfa9298.svg",
     "static/media/syaq.svg": "/syaq-project/static/media/syaq.8810c859df137440f50c928808535ae4.svg",
     "static/media/Group 244icon.svg": "/syaq-project/static/media/Group 244icon.a906151ada82ff0fe9803e1b84bb7a46.svg",
     "index.html": "/syaq-project/index.html",
     "main.a650ed1a.css.map": "/syaq-project/static/css/main.a650ed1a.css.map",
-    "main.1e788670.js.map": "/syaq-project/static/js/main.1e788670.js.map",
+    "main.056db2ae.js.map": "/syaq-project/static/js/main.056db2ae.js.map",
     "787.d4aba7ab.chunk.js.map": "/syaq-project/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a650ed1a.css",
-    "static/js/main.1e788670.js"
+    "static/js/main.056db2ae.js"
   ]
 }
