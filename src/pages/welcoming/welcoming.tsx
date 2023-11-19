@@ -7,7 +7,7 @@ interface MainProps {
   }
 export const Welcoming = ({children}:MainProps) => {
     return (
-        <div>
+        <div style={{display:'flex',flexDirection:'column',minHeight:'100vh'}}>
           <SimpleNav />
             <div style={{ padding: '40px' }}>{children}</div>
             <Footer />

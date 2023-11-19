@@ -23,7 +23,7 @@ export const SyaqServices = () => {
         }}
       >
         <Box sx={{ marginTop: 20 }}>
-          <img src={Syaq} width="100px" alt="image3" />
+          <img src={Syaq} width="100px" alt="image5" />
         </Box>
 
         <Grid

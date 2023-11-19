@@ -15,10 +15,8 @@ export const Footer = () => {
       style={{
         padding: "10px",
         textAlign: "center",
-        position: "fixed",
-        bottom: 0,
-        width: "100%",
-        borderTop: "1px solid #ddd", 
+        borderTop: "1px solid #ddd",
+        marginTop: "auto", 
       }}
     >
       <Container maxWidth="sm">

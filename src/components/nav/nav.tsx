@@ -205,43 +205,43 @@ export const Nav = (props: Props) => {
   );
 };
 
+
 export const SimpleNav = () => {
   return (
     <div>
       <CssBaseline />
-      <AppBar sx={{ background: "transparent", boxShadow: "none" }}>
+      <AppBar sx={{ background: 'transparent', boxShadow: 'none',position:'relative' }}>
         <Toolbar>
           <Box
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%"
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              width: '100%',
             }}
           >
-             <Box>
+            <Box>
               <Button
                 component={NavLink}
                 to="/"
                 sx={{
                   marginX: 4,
                   fontSize: 16,
-                  color: "rgba(0, 0, 0, 0.5)",
-                  position: "relative",
+                  color: 'rgba(0, 0, 0, 0.5)',
                   "&.active": {
-                    color: "rgba(28, 119, 255, 1)",
-                    "&::before": {
+                    color: 'rgba(28, 119, 255, 1)',
+                    '&::before': {
                       content: '""',
-                      position: "absolute",
-                      right: "-10px",
-                      top: "50%",
-                      transform: "translateY(-50%)",
-                      width: "8px",
-                      height: "8px",
-                      borderRadius: "50%",
-                      backgroundColor: "rgba(28, 119, 255, 1)"
-                    }
-                  }
+                      position: 'absolute',
+                      right: '-10px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      width: '8px',
+                      height: '8px',
+                      borderRadius: '50%',
+                      backgroundColor: 'rgba(28, 119, 255, 1)',
+                    },
+                  },
                 }}
               >
                 الرئيسية
@@ -254,22 +254,21 @@ export const SimpleNav = () => {
                 sx={{
                   marginX: 4,
                   fontSize: 16,
-                  color: "rgba(0, 0, 0, 0.5)",
-                  position: "relative",
+                  color: 'rgba(0, 0, 0, 0.5)',
                   "&.active": {
-                    color: "rgba(28, 119, 255, 1)",
-                    "&::before": {
+                    color: 'rgba(28, 119, 255, 1)',
+                    '&::before': {
                       content: '""',
-                      position: "absolute",
-                      right: "-10px",
-                      top: "50%",
-                      transform: "translateY(-50%)",
-                      width: "8px",
-                      height: "8px",
-                      borderRadius: "50%",
-                      backgroundColor: "rgba(28, 119, 255, 1)"
-                    }
-                  }
+                      position: 'absolute',
+                      right: '-10px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      width: '8px',
+                      height: '8px',
+                      borderRadius: '50%',
+                      backgroundColor: 'rgba(28, 119, 255, 1)',
+                    },
+                  },
                 }}
               >
                 نبذه عنا
@@ -282,55 +281,26 @@ export const SimpleNav = () => {
                 sx={{
                   marginX: 4,
                   fontSize: 16,
-                  color: "rgba(0, 0, 0, 0.5)",
-                  position: "relative",
+                  color: 'rgba(0, 0, 0, 0.5)',
                   "&.active": {
-                    color: "rgba(28, 119, 255, 1)",
-                    "&::before": {
+                    color: 'rgba(28, 119, 255, 1)',
+                    '&::before': {
                       content: '""',
-                      position: "absolute",
-                      right: "-10px",
-                      top: "50%",
-                      transform: "translateY(-50%)",
-                      width: "8px",
-                      height: "8px",
-                      borderRadius: "50%",
-                      backgroundColor: "rgba(28, 119, 255, 1)"
-                    }
-                  }
+                      position: 'absolute',
+                      right: '-10px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      width: '8px',
+                      height: '8px',
+                      borderRadius: '50%',
+                      backgroundColor: 'rgba(28, 119, 255, 1)',
+                    },
+                  },
                 }}
               >
                 خدماتنا
               </Button>
             </Box>
-            {/* <Box>
-              <Button
-                component={NavLink}
-                to="/contact"
-                sx={{
-                  marginX: 4,
-                  fontSize: 16,
-                  color: "rgba(0, 0, 0, 0.5)",
-                  position: "relative",
-                  "&.active": {
-                    color: "rgba(28, 119, 255, 1)",
-                    "&::before": {
-                      content: '""',
-                      position: "absolute",
-                      right: "-10px",
-                      top: "50%",
-                      transform: "translateY(-50%)",
-                      width: "8px",
-                      height: "8px",
-                      borderRadius: "50%",
-                      backgroundColor: "rgba(28, 119, 255, 1)"
-                    }
-                  }
-                }}
-              >
-                تواصل معنا
-              </Button>
-            </Box> */}
           </Box>
         </Toolbar>
       </AppBar>
@@ -338,3 +308,4 @@ export const SimpleNav = () => {
     </div>
   );
 };
+
