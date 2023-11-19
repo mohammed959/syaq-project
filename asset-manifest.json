@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/syaq-project/static/css/main.a650ed1a.css",
+    "main.js": "/syaq-project/static/js/main.cf524e52.js",
+    "static/js/787.d4aba7ab.chunk.js": "/syaq-project/static/js/787.d4aba7ab.chunk.js",
+    "static/media/Frame 21syaq-icon.svg": "/syaq-project/static/media/Frame 21syaq-icon.16e3d8976965d3dd4a64440cfcfa9298.svg",
+    "static/media/syaq.svg": "/syaq-project/static/media/syaq.8810c859df137440f50c928808535ae4.svg",
+    "index.html": "/syaq-project/index.html",
+    "main.a650ed1a.css.map": "/syaq-project/static/css/main.a650ed1a.css.map",
+    "main.cf524e52.js.map": "/syaq-project/static/js/main.cf524e52.js.map",
+    "787.d4aba7ab.chunk.js.map": "/syaq-project/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a650ed1a.css",
+    "static/js/main.cf524e52.js"
+  ]
+}
