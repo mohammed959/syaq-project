@@ -303,7 +303,7 @@ export const SimpleNav = () => {
                 خدماتنا
               </Button>
             </Box>
-            <Box>
+            {/* <Box>
               <Button
                 component={NavLink}
                 to="/contact"
@@ -330,7 +330,7 @@ export const SimpleNav = () => {
               >
                 تواصل معنا
               </Button>
-            </Box>
+            </Box> */}
           </Box>
         </Toolbar>
       </AppBar>

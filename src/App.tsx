@@ -7,12 +7,24 @@ import { Analytics } from "./pages/main/analyticsCompoent/analytics";
 import { Generate } from "./pages/main/generateComponent/generate";
 import { Checking } from "./pages/main/checking/checking";
 import "./App.css";
+import { MainWebPage } from "./pages/welcoming/main/main";
+import { SyaqServices } from "./pages/welcoming/service/service";
+import { About } from "./pages/welcoming/about/about";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Welcoming />} />
+        <Route path="/" element={<Welcoming >
+          <MainWebPage />
+        </Welcoming >} />
+        <Route path="/services" element={<Welcoming >
+          <SyaqServices />
+        </Welcoming >} />
+
+        <Route path="/about" element={<Welcoming >
+          <About />
+        </Welcoming >} />
         <Route
           path="/syaq/social"
           element={
