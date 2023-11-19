@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://mohammed959.github.io/syaq-project",
+  "homepage": "https://mohammed959.github.io/syaq-project/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
