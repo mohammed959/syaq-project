@@ -4,7 +4,8 @@ import { useTheme } from "@mui/system";
 import { Box, Typography } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Chart, ArcElement } from "chart.js";
-import "./statistics.css"
+import MapImage from "../../../../images/Frame 2map.svg";
+import "./statistics.css";
 
 Chart.register(ArcElement);
 
@@ -37,74 +38,94 @@ export const Statistics = () => {
   };
 
   return (
-    <div>
-      <Box
-        sx={{
-          textAlign: "right",
-          marginTop: isLargeScreen ? "0px" : isMeduim ? '0px' : '20px',
-          paddingX: "10px"
-        }}
-      >
-        <Typography
-          variant="h6"
-          sx={{ fontWeight: "bold", marginBottom: "20px" }}
-        >
-          مرات الظهور الكلمة
-        </Typography>
-      </Box>
-      <Box
-        sx={{
+    <div style={{ position: "relative" }}>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "center",
           alignItems: "center",
-          padding: "10px"
+          zIndex: 1
         }}
       >
-        <Box sx={{ maxWidth: "50%", flexGrow: 1 }}>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              textAlign: "right"
-            }}
+        <Typography variant="h4" sx={{ fontWeight: "bold", color: "#333" }}>
+          تحت التطوير
+        </Typography>
+      </div>
+
+      <div style={{ opacity: "0.3" }}>
+        <Box
+          sx={{
+            textAlign: "right",
+            marginTop: isLargeScreen ? "0px" : isMeduim ? "0px" : "20px",
+            paddingX: "10px"
+          }}
+        >
+          <Typography
+            variant="h6"
+            sx={{ fontWeight: "bold", marginBottom: "20px" }}
           >
-            <Box>
-              <Typography
-                noWrap
-                className="typography"
-              >
-                المنطقة الوسطى ٦٢.٥ ٪
-              </Typography>
-            </Box>
-            <Box>
-              <Typography
-                noWrap
-                className="typography"
-              >
-                المنطقة الغربية ٢٥ ٪
-              </Typography>
-            </Box>
-            <Box>
-              <Typography
-                noWrap
-                className="typography"
-              >
-                المنطقة الجنوبية ١٢.٥
-              </Typography>
+            مرات الظهور الكلمة
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "10px"
+          }}
+        >
+          <Box sx={{ maxWidth: "50%", flexGrow: 1 }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                textAlign: "right"
+              }}
+            >
+              <Box>
+                <Typography noWrap className="typography">
+                  المنطقة الوسطى ٦٢.٥ ٪
+                </Typography>
+              </Box>
+              <Box>
+                <Typography noWrap className="typography">
+                  المنطقة الغربية ٢٥ ٪
+                </Typography>
+              </Box>
+              <Box>
+                <Typography noWrap className="typography">
+                  المنطقة الجنوبية ١٢.٥
+                </Typography>
+              </Box>
             </Box>
           </Box>
+          <Box sx={{ maxWidth: "50%", flexGrow: 1, marginLeft: "auto" }}>
+            <Doughnut
+              data={doughnutChartData}
+              options={{
+                ...doughnutChartOptions,
+                responsive: true,
+                maintainAspectRatio: false
+              }}
+            />
+          </Box>
         </Box>
-        <Box sx={{ maxWidth: "50%", flexGrow: 1, marginLeft: "auto" }}>
-          <Doughnut
-            data={doughnutChartData}
-            options={{
-              ...doughnutChartOptions,
-              responsive: true,
-              maintainAspectRatio: false
-            }}
-          />
+
+        <Box>
+          <Box sx={{textAlign:'right'}}>
+            <Typography sx={{fontWeight:'bold', marginBottom:"20px"}}>البيانات الديموغرافية</Typography>
+          </Box>
+          <Box>
+            <img src={MapImage} alt="Map" style={{marginTop:'10px'}} />
+          </Box>
         </Box>
-      </Box>
+      </div>
     </div>
   );
 };
